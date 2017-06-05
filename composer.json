@@ -1,28 +1,22 @@
 {
     "name": "nuclearbear/yii2-encydb",
-
-    "type": "yii2-extension",
-
-    "description": "Plugin for yii2 wich allow to encrypt database with search in encrypted fields.",
-    "keywords": ["yii2", "database", "encrypting", "security"],
+    "type": "libabry",
+    "description": "Plugin for PHP projects which allow to encrypt database with search in encrypted fields.",
+    "keywords": ["php", "search", "database", "encrypting", "security"],
     "license": "BSD-3-Clause",
-
     "authors": [
         {
             "name": "Tarasov Vasyl",
             "email": "vasyl.tarasov@icloud.com"
         }
     ],
-
-    "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "imagine/imagine": "v0.5.0",
-        "fxp/composer-asset-plugin": "*"
-    },
-
     "autoload": {
         "psr-4": {
-            "nuclearbear\\Encydb\\": ""
+            "Nuclearbear\\Encydb\\": ""
         }
+    },
+    "require": {
+        "abbe98/simple-pdo": "^2.1",
+        "paragonie/random_compat": "^2.0"
     }
 }
